@@ -43,7 +43,7 @@ Program to implement the given logic function using NAND and NOR gates and to ve
 Developed by: JAYABHARATHI.S
 RegisterNumber: 212222100013 
 
- NAND OPERATION
+ COMBINATION 1 USING NAND OPERATION
 
 module fourexp(A,B,C,D,F);  
 input A,B,C,D;  
@@ -56,7 +56,7 @@ assign F = (~P&~Q&~R);
 endmodule 
 
 
- NOR OPERATION
+COMBINATION 2 USING NOR OPERATION
  
 module fourexp(A,B,C,D,F);  
 input A,B,C,D;  
