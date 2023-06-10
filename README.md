@@ -45,24 +45,23 @@ RegisterNumber: 212222100013
 /*
 
 COMBINATION 1 USING NAND OPERATION
-```c
 
 module expf1(a,b,c,d,f1);
 input a,b,c,d;
 output f1;
 assign f1=((~b & d) | (~a & b & d) | (a & b &~c));
 endmodule
-```
+
 
 COMBINATION 2 USING NOR OPERATION
- ```c
+
 module exp2(w,x,y,z,f2);
 input w,x,y,z;
 output f2;
 assign f2=((x & y) | (~y & z) | (w & y));
 endmodule  
 
-*/
+
 ```
 
 ## Output:
@@ -71,17 +70,19 @@ endmodule
 
 ## RTL
 
-![image](https://user-images.githubusercontent.com/120367796/232848801-86390348-2137-4160-ad35-32cbe67e217b.png)
+![de](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/159559a8-d80f-4860-ab85-e87621be7730)
 
 
 ## Timing Diagram
 
-![image](https://user-images.githubusercontent.com/120367796/232850850-495f5c2b-3c41-4465-aea8-b8fbcb11a359.png)
+![de3](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/d269b150-c1cd-4ee9-a659-ec6216c26d81)
+
 
 
 ## Truth Table
 
-![image](https://user-images.githubusercontent.com/120367796/232851058-4fa42e69-9788-4279-a4d6-777d3ebfcbec.png)
+![de5](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/8112c0d7-6726-4740-b606-d437e4d26c96)
+
 
 
 
@@ -89,16 +90,19 @@ endmodule
 
 ## RTL realization:
 
-![image](https://user-images.githubusercontent.com/120367796/232849906-b82da722-4159-45b7-b6df-3f97bbf42099.png)
+![de2](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/ae111975-bc3b-4825-8918-b0ce4dfb5714)
+
+
 
 ## Timing Diagram:
+![de4](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/9dcb79b0-6eec-4340-a04e-e862c66e12e5)
 
-![image](https://user-images.githubusercontent.com/120367796/232851281-0b64ed5e-b3f9-486c-aebb-5e389f81124c.png)
+
 
 
 ## Truth Table:
+![de6](https://github.com/Jayabharathi3/Experiment--04-Implementation-of-combinational-logic-using-universal-gates/assets/120367796/a12d26ec-edd9-4a5e-9943-a15dfcebf49e)
 
-![image](https://user-images.githubusercontent.com/120367796/232851457-a0d4ef6d-bef6-4fcd-9833-458c789d5053.png)
 
 
 ## Result:
