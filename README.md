@@ -42,32 +42,25 @@ Step 6: Give the respective inputs for timing diagram and obtain the results.
 Program to implement the given logic function using NAND and NOR gates and to verify its operations in quartus using Verilog programming.
 Developed by: JAYABHARATHI.S
 RegisterNumber: 212222100013 
+/*
 
- COMBINATION 1 USING NAND OPERATION
+COMBINATION 1 USING NAND OPERATION
+```c
 
-module fourexp(A,B,C,D,F);  
-input A,B,C,D;  
-output F;  
-wire P,Q,R;  
-assign P = C&(~B)&(~A);  
-assign Q = D&(~C)&(~A);  
-assign R = (~C)&B&(~A);  
-assign F = (~P&~Q&~R);  
-endmodule 
-
+module expf1(a,b,c,d,f1);
+input a,b,c,d;
+output f1;
+assign f1=((~b & d) | (~a & b & d) | (a & b &~c));
+endmodule
+```
 
 COMBINATION 2 USING NOR OPERATION
- 
-module fourexp(A,B,C,D,F);  
-input A,B,C,D;  
-output F;  
-wire P,Q,R,S;  
-assign P = C&(~B)&A;  
-assign Q = D&(~C)&A;  
-assign R = C&(~B)&A;  
-assign S = ~(P|Q|R);  
-assign F = ~S;  
-endmodule 
+ ```c
+module exp2(w,x,y,z,f2);
+input w,x,y,z;
+output f2;
+assign f2=((x & y) | (~y & z) | (w & y));
+endmodule  
 
 */
 ```
